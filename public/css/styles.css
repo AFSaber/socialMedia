@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: rgb(64, 163, 163);
+
+}
+.container {
+    background-color: rgb(220, 220, 221);
+    height: 600rem;
+
+}
+ .nav-item .nav-link, .navbar-brand {
+    color:#398DCB
+}
+
+ .nav-item:last-child
+{
+    text-align: right;
+    margin-right: 0;
+
+}
+
+.nav-item .nav-link:hover , .navbar-brand:hover {
+    color:rgb(7, 33, 118)
+}
+
+
+.form-group  {
+    width: 50%;
+    margin:0 auto;
+}
+
+.form-control {
+    resize: none;
+    background-color: white
+}
+
+.btn-group {
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-content:space-between;
+    margin-top:-3rem;
+    margin-left:1rem;
+    margin-right:1rem;
+    }
+
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap:1rem;
+
+    }
+    .post-user-details {
+        display:flex;
+        flex-direction:row;
+        gap:1rem;
+        margin-left:1rem;
+
+    }
+
+    .post-user-details h5 {
+        margin:auto 0;
+        color:#0D6EFD;
+    }
+
+    .post-user-details h5:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .post-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .post img {
+        border-radius: 50%;
+    }
+
+    .post-text , .date {
+        padding:0.5rem 1rem;
+        margin-left:1rem;
+
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .date span {
+        color: rgb(73, 26, 26);
+        font-weight: bold;
+    }
+
+ 

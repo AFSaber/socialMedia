@@ -1,0 +1,51 @@
+
+<%- include("partials/navbar") -%>
+
+<section class="post-form-section">
+
+    <form class="post-form" action="/" method="post">
+        <div class="form-group">
+            <textarea class="form-control"  onclick="newQuote" name="postBody" rows="7" cols="40"></textarea>
+                <div class="btn-group">
+                    <div>
+                    <button  class="btn btn-primary">Add photo</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary" name="submit" type="submit" value="post-btn">post</button>
+                </div>
+                </div>
+                </div>
+                
+    </form>
+</section>
+
+
+
+ <% let hours = new Date().getHours() %>
+ 
+  
+
+ <%  posts.forEach(function(post){ %>
+    <div class="post">
+        <div class="post-user-details">
+            <img src="https://www.w3schools.com/html/img_girl.jpg" width="42" height="42">
+            <h5>Ahmed </h5>
+        </div>
+    
+        <div class="post-details">
+    <p class="post-text">  <%=post%>    </p>
+
+    <% if(hours<12) { %> <p class="date"> posted at <span> <%= hours %> AM  </span> </p>  <%} %>
+    <% if(hours>11) { %> <p class="date"> posted at <span> <%= hours -12 %> PM  </p>  <%} %>
+    
+    <% }) %>
+        </div>
+</div>
+
+
+
+
+<hr>
+    
+
+ <%- include("partials/footer") -%>
